@@ -1,0 +1,12 @@
+/* Southline Gallery — Option 4 refined, smaller header wordmark */
+:root { --southline-serif: Georgia, 'Times New Roman', serif; --southline-sans: Arial, Helvetica, sans-serif; }
+body, button, input, select, textarea, nav, .button { font-family: var(--southline-sans); letter-spacing: -0.01em; }
+.header__heading, .header__heading-link, [class*="header"] .shop-name { font-family: var(--southline-sans) !important; font-size: clamp(1.35rem, 2.15vw, 2rem) !important; font-weight: 400 !important; letter-spacing: .11em !important; line-height: 1 !important; text-transform: uppercase; }
+h1, h2, h3, .h1, .h2, .h3 { font-family: var(--southline-serif) !important; font-weight: 400; letter-spacing: .01em; line-height: 1.05; }
+.hero h1, .hero .h1, .banner h1, .banner .h1 { font-family: var(--southline-serif) !important; font-size: clamp(3.6rem, 8vw, 7.5rem) !important; font-weight: 400 !important; letter-spacing: .065em !important; line-height: .92 !important; text-transform: uppercase; }
+.hero h2, .hero .h2, .banner h2, .banner .h2 { font-family: var(--southline-sans) !important; font-size: clamp(1.3rem, 2.4vw, 2rem) !important; font-weight: 500 !important; letter-spacing: .30em !important; text-transform: uppercase; }
+.hero p, .banner p, .hero .subtitle, .banner .subtitle { font-family: var(--southline-sans) !important; letter-spacing: .20em; text-transform: uppercase; }
+.header a, nav a, .button, button { font-family: var(--southline-sans) !important; letter-spacing: .10em; text-transform: uppercase; }
+.header { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+.hero__content, .banner__content { padding-left: clamp(2.5rem, 5vw, 5rem) !important; }
+@media (max-width: 749px) { .header__heading, .header__heading-link, [class*="header"] .shop-name { font-size: 1.35rem !important; letter-spacing: .08em !important; } .hero h1, .hero .h1, .banner h1, .banner .h1 { font-size: clamp(2.7rem, 12vw, 4.5rem) !important; letter-spacing: .045em !important; } .hero h2, .hero .h2, .banner h2, .banner .h2 { font-size: 1.05rem !important; letter-spacing: .20em !important; } .hero__content, .banner__content { padding-left: 1.5rem !important; } }

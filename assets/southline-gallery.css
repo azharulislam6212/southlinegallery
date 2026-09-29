@@ -1,0 +1,99 @@
+/* Southline Gallery — coastal fine-art preview */
+:root {
+  --southline-ivory: #f8f6f1;
+  --southline-ink: #171714;
+  --southline-slate: #5e7075;
+  --southline-line: #d9d4ca;
+  --southline-serif: "Iowan Old Style", Baskerville, "Times New Roman", serif;
+}
+
+html, body, .page-wrapper, .content-for-layout {
+  background: var(--southline-ivory);
+  color: var(--southline-ink);
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4,
+.text-block.h1 > *, .text-block.h2 > *, .text-block.h3 > *, .text-block.h4 > *,
+.product-title, .product-title * {
+  font-family: var(--southline-serif) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.015em;
+}
+
+.header-section, #header-group, footer,
+.shopify-section:not(.header-section) .section-background {
+  background: var(--southline-ivory) !important;
+}
+
+.header__row, .header-announcements, footer {
+  border-color: var(--southline-line) !important;
+}
+
+.header a, .header-menu a, .header-actions__action,
+.header-announcements * {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.header-announcements {
+  color: var(--southline-slate);
+}
+
+.button, .button-secondary, .button-custom,
+button.shopify-payment-button__button--unbranded,
+.variant-option__button-label {
+  border-radius: 0 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-card, .collection-card,
+.product-card img, .collection-card img {
+  border-radius: 0 !important;
+}
+
+.product-card__content {
+  padding-top: 0.35rem;
+}
+
+.product-card .price,
+.product-card [class*="price"] {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.hero__content-wrapper {
+  text-shadow: 0 1px 18px rgb(0 0 0 / 0.18);
+}
+
+.hero__content-wrapper .text-block,
+.hero__content-wrapper .text-block * {
+  font-family: var(--southline-serif) !important;
+}
+
+.hero__content-wrapper .text-block > * {
+  letter-spacing: 0.02em;
+}
+
+.section-resource-list,
+.section-carousel {
+  row-gap: 2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .page-width-wide, .page-width-normal, .page-width-narrow, .page-width-content {
+    --page-margin: 56px;
+  }
+
+  .product-card__content {
+    padding-top: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .hero__content-wrapper {
+    padding-inline: 22px !important;
+  }
+}
